@@ -31,3 +31,18 @@ This project implements a Retrieval Augmented Generation (RAG) chatbot that answ
 
 pip install -r requirements.txt
 python app.py
+
+Project Architecture
+PDF Document → Text Chunking → Embeddings → FAISS Vector DB
+                                      ↓
+User Question → Embedding → Similar Chunks → LLM → Answer
+Example Questions
+What is Artificial Intelligence?
+Summarize the document
+What is RAG?
+Explain Machine Learning
+Future Improvements
+Add Streamlit UI
+Support multiple PDFs
+Add chat history
+Deploy as web app
